@@ -1,38 +1,26 @@
 # GroundwaterPredictor
 
-Android Studio Java app that sends groundwater tensor data to your FastAPI backend.
+Android Studio Java app that sends user-friendly groundwater prediction requests to the deployed backend API.
 
 ## Backend contract
 
 - Endpoint: `POST /predict`
-- Body: `{"input": [6912 float values]}`
-- Expected tensor shape on the server: `(1, 6, 32, 36, 1)`
+- Body: `{"region": "California", "time_range": "6_months", "start_date": "2025-10-01", "end_date": "2026-04-01"}`
 
-## Backend URLs from your report
+## Backend URL
 
-- Base URL: `http://127.0.0.1:8000`
-- Docs: `http://127.0.0.1:8000/docs`
-- Prediction endpoint: `POST http://127.0.0.1:8000/predict`
+- Prediction endpoint: `https://water-backend-1-klt6.onrender.com/predict`
 
-## Where to set the server URL
+## App flow
 
-Two easy options are built in:
-
-1. Edit `BuildConfig.SERVER_BASE_URL` in `app/build.gradle`
-2. Paste the URL directly into the app's `Backend base URL` field at runtime
-
-The project now defaults to `http://127.0.0.1:8000/` to match your backend report.
-
-If you test from an Android emulator on the same PC, Android usually cannot reach your Windows localhost through `127.0.0.1`. In that case, change the app URL to `http://10.0.2.2:8000/`.
-
-## Input options
-
-- Paste 6912 comma-separated or space-separated float values
-- Tap `Use Sample Data` to send a valid sample tensor
+- User selects a region from a dropdown
+- User selects a time range from a dropdown
+- User optionally adjusts the start and end dates
+- App sends a simplified prediction request to the backend
+- Results are shown as a summary plus a heatmap-style grid
 
 ## Open in Android Studio
 
 1. Open the `GroundwaterPredictor` folder
 2. Let Gradle sync
-3. Replace the backend URL if needed
-4. Run on an emulator or Android device
+3. Run on an emulator or Android device

@@ -1,10 +1,12 @@
 package com.waterproj.groundwaterpredictor;
 
-import org.json.JSONArray;
+import android.util.Log;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.Closeable;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -14,35 +16,44 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public final class PredictionClient {
+    private static final String TAG = "PredictionClient";
+    private static final String ROOT_URL = "https://water-backend-1-klt6.onrender.com/";
+    private static final String PREDICTION_URL = "https://water-backend-1-klt6.onrender.com/predict";
+    private static final int CONNECT_TIMEOUT_MS = 20000;
+    private static final int READ_TIMEOUT_MS = 90000;
 
     public interface Callback {
         void onSuccess(String responseText);
         void onError(String message);
     }
 
-    public void requestPrediction(String baseUrl, float[] inputValues, Callback callback) {
+    public void requestPrediction(
+            String region,
+            String timeRange,
+            String startDate,
+            String endDate,
+            Callback callback
+    ) {
         HttpURLConnection connection = null;
+        InputStream stream = null;
         try {
-            String normalizedUrl = baseUrl.trim();
-            if (!normalizedUrl.endsWith("/")) {
-                normalizedUrl = normalizedUrl + "/";
-            }
+            warmUpBackend();
 
-            URL url = new URL(normalizedUrl + "predict");
+            URL url = new URL(PREDICTION_URL);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
-            connection.setConnectTimeout(15000);
-            connection.setReadTimeout(30000);
+            connection.setConnectTimeout(CONNECT_TIMEOUT_MS);
+            connection.setReadTimeout(READ_TIMEOUT_MS);
             connection.setDoOutput(true);
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
+            connection.setRequestProperty("User-Agent", "GroundwaterPredictor-Android/1.0");
 
             JSONObject body = new JSONObject();
-            JSONArray inputs = new JSONArray();
-            for (float value : inputValues) {
-                inputs.put(value);
-            }
-            body.put("input", inputs);
+            body.put("region", region);
+            body.put("time_range", timeRange);
+            body.put("start_date", startDate);
+            body.put("end_date", endDate);
 
             OutputStream outputStream = connection.getOutputStream();
             BufferedWriter writer = new BufferedWriter(
@@ -54,7 +65,7 @@ public final class PredictionClient {
             outputStream.close();
 
             int responseCode = connection.getResponseCode();
-            InputStream stream = responseCode >= 200 && responseCode < 300
+            stream = responseCode >= 200 && responseCode < 300
                     ? connection.getInputStream()
                     : connection.getErrorStream();
 
@@ -64,16 +75,50 @@ public final class PredictionClient {
             }
 
             String response = readStream(stream);
+            Log.d(TAG, "HTTP " + responseCode + " response: " + response);
             if (responseCode >= 200 && responseCode < 300) {
                 callback.onSuccess(response);
             } else {
                 callback.onError("HTTP " + responseCode + ": " + response);
             }
         } catch (Exception exception) {
+            Log.e(TAG, "Prediction request failed", exception);
             callback.onError(exception.getMessage());
         } finally {
+            closeQuietly(stream);
             if (connection != null) {
                 connection.disconnect();
+            }
+        }
+    }
+
+    private void warmUpBackend() {
+        HttpURLConnection warmupConnection = null;
+        InputStream warmupStream = null;
+        try {
+            URL warmupUrl = new URL(ROOT_URL);
+            warmupConnection = (HttpURLConnection) warmupUrl.openConnection();
+            warmupConnection.setRequestMethod("GET");
+            warmupConnection.setConnectTimeout(CONNECT_TIMEOUT_MS);
+            warmupConnection.setReadTimeout(READ_TIMEOUT_MS);
+            warmupConnection.setRequestProperty("Accept", "application/json");
+            warmupConnection.setRequestProperty("User-Agent", "GroundwaterPredictor-Android/1.0");
+
+            int warmupCode = warmupConnection.getResponseCode();
+            warmupStream = warmupCode >= 200 && warmupCode < 300
+                    ? warmupConnection.getInputStream()
+                    : warmupConnection.getErrorStream();
+
+            if (warmupStream != null) {
+                String warmupResponse = readStream(warmupStream);
+                Log.d(TAG, "Warmup HTTP " + warmupCode + ": " + warmupResponse);
+            }
+        } catch (Exception exception) {
+            Log.w(TAG, "Backend warmup failed, continuing with predict request", exception);
+        } finally {
+            closeQuietly(warmupStream);
+            if (warmupConnection != null) {
+                warmupConnection.disconnect();
             }
         }
     }
@@ -89,5 +134,16 @@ public final class PredictionClient {
         }
         reader.close();
         return builder.toString();
+    }
+
+    private void closeQuietly(Closeable closeable) {
+        if (closeable == null) {
+            return;
+        }
+        try {
+            closeable.close();
+        } catch (Exception ignored) {
+            Log.w(TAG, "Failed to close network resource", ignored);
+        }
     }
 }
