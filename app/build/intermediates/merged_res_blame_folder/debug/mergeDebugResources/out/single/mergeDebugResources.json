@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/drawable_top_banner_background.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/drawable/top_banner_background.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/layout_fragment_rainfall_prediction.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/layout/fragment_rainfall_prediction.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/layout_fragment_model_placeholder.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/layout/fragment_model_placeholder.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/drawable_heatmap_background.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/drawable/heatmap_background.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/layout_fragment_groundwater_prediction.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/layout/fragment_groundwater_prediction.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/xml_network_security_config.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/drawable_input_field_background.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/drawable/input_field_background.xml"
+    },
+    {
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/layout/activity_main.xml"
+    }
+]

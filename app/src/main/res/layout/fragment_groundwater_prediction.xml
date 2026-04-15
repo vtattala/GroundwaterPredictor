@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/card_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/input_card_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/input_card_subtitle"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/region_label"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/regionDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_field_background"
+                    android:completionThreshold="1"
+                    android:dropDownHeight="wrap_content"
+                    android:hint="@string/region_hint"
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/time_range_label"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/timeRangeDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_field_background"
+                    android:completionThreshold="1"
+                    android:dropDownHeight="wrap_content"
+                    android:hint="@string/time_range_hint"
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/start_date_label"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/startDateInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_field_background"
+                    android:hint="@string/start_date_hint"
+                    android:inputType="date"
+                    android:padding="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/end_date_label"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/endDateInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_field_background"
+                    android:hint="@string/end_date_hint"
+                    android:inputType="date"
+                    android:padding="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/runPredictionButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/run_prediction"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/primary"
+                    app:cornerRadius="18dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/card_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/results_ready"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/summaryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/default_summary"
+                    android:textColor="@color/text_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/trendTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/default_trend"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/heatmap_title"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <com.waterproj.groundwaterpredictor.HeatmapGridView
+                    android:id="@+id/heatmapGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/heatmap_background" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
