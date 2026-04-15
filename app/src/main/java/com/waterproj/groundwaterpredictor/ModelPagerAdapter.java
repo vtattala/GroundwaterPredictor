@@ -22,10 +22,7 @@ public class ModelPagerAdapter extends FragmentStateAdapter {
             return new RainfallPredictionFragment();
         }
 
-        return ModelPlaceholderFragment.newInstance(
-                "Soil moisture predictions are coming next.",
-                "This slot is ready for another backend-powered model using the same region, time range, and results workflow."
-        );
+        return new SoilMoistureFragment();
     }
 
     @Override

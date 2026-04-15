@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/layout_fragment_rainfall_prediction.xml.flat",
-        "source": "com.waterproj.groundwaterpredictor.app-main-34:/layout/fragment_rainfall_prediction.xml"
+        "merged": "com.waterproj.groundwaterpredictor.app-debug-32:/layout_fragment_soil_moisture_prediction.xml.flat",
+        "source": "com.waterproj.groundwaterpredictor.app-main-34:/layout/fragment_soil_moisture_prediction.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -14,6 +14,14 @@
     {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\layout_fragment_model_placeholder.xml.flat",
         "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\layout\\fragment_model_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\drawable_input_field_background.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\drawable\\input_field_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\layout_fragment_groundwater_prediction.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\layout\\fragment_groundwater_prediction.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\drawable_top_banner_background.xml.flat",
@@ -32,15 +40,15 @@
         "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\drawable\\heatmap_background.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\drawable_input_field_background.xml.flat",
-        "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\drawable\\input_field_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\layout_fragment_groundwater_prediction.xml.flat",
-        "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\layout\\fragment_groundwater_prediction.xml"
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\layout_fragment_soil_moisture_prediction.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\layout\\fragment_soil_moisture_prediction.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\xml_network_security_config.xml.flat",
         "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-debug-32:\\layout_fragment_rainfall_prediction.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\9.0-milestone-1\\com.waterproj.groundwaterpredictor.app-main-34:\\layout\\fragment_rainfall_prediction.xml"
     }
 ]

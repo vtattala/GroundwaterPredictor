@@ -12,6 +12,7 @@ MERGED from [androidx.recyclerview:recyclerview:1.3.1] C:\Users\Owner\.gradle\ca
 MERGED from [androidx.viewpager2:viewpager2:1.1.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f962625e1ac977d029d75e465a96ef65\transformed\viewpager2-1.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\43dc01a712177aa242e02dbfd3f6e713\transformed\fragment-1.8.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\eec5b95d98429a99f6e314421e8bdb13\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9dbb34f545b74d5796a918eb648f377\transformed\tensorflow-lite-2.14.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\75c5328f1f07fa5d7dad34512a6dadf3\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9c1b0d15e2e306c7984741feb49ecb8\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.5.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\9434226f455fc6a2db009b68a88e6431\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
@@ -46,6 +47,7 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Owner\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\5144fe63526e36de532dcc3bc0914bd9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\985344a4f5b3b23f4a1237845c3e1772\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\04327b5b6912ab36ab33598c4e029e66\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6726c0c92ea802d78e0ad2e921b021b9\transformed\tensorflow-lite-api-2.14.0\AndroidManifest.xml:2:1-11:12
 	package
 		INJECTED from C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -65,6 +67,8 @@ MERGED from [com.google.android.material:material:1.12.0] C:\Users\Owner\.gradle
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\ecf85a17193de4684e70ccbc25684876\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6c74450eb6350f6f4cb2e3b3da193a4f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6c74450eb6350f6f4cb2e3b3da193a4f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9dbb34f545b74d5796a918eb648f377\transformed\tensorflow-lite-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9dbb34f545b74d5796a918eb648f377\transformed\tensorflow-lite-2.14.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\031d467e1976ff867e8e3d32916cd70e\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\031d467e1976ff867e8e3d32916cd70e\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\c8dd50b7c71f07829c50d26613b1b06c\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
@@ -77,6 +81,8 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Owner\.gradle\cach
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\470fa7f6b06f86e4aab9d53e3e492b82\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\4a6693fec0bbf22fcbeb4ff49a83ea22\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\4a6693fec0bbf22fcbeb4ff49a83ea22\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6726c0c92ea802d78e0ad2e921b021b9\transformed\tensorflow-lite-api-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6726c0c92ea802d78e0ad2e921b021b9\transformed\tensorflow-lite-api-2.14.0\AndroidManifest.xml:9:5-20
 	android:extractNativeLibs
 		INJECTED from C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
@@ -133,6 +139,8 @@ MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\Owner\.gradle\caches\9.0
 MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\43dc01a712177aa242e02dbfd3f6e713\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\eec5b95d98429a99f6e314421e8bdb13\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\eec5b95d98429a99f6e314421e8bdb13\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9dbb34f545b74d5796a918eb648f377\transformed\tensorflow-lite-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9dbb34f545b74d5796a918eb648f377\transformed\tensorflow-lite-2.14.0\AndroidManifest.xml:6:5-7:38
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\75c5328f1f07fa5d7dad34512a6dadf3\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\75c5328f1f07fa5d7dad34512a6dadf3\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9c1b0d15e2e306c7984741feb49ecb8\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
@@ -201,6 +209,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Owner\.gradle\caches\9.0-miles
 MERGED from [androidx.print:print:1.0.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\985344a4f5b3b23f4a1237845c3e1772\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\04327b5b6912ab36ab33598c4e029e66\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\04327b5b6912ab36ab33598c4e029e66\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6726c0c92ea802d78e0ad2e921b021b9\transformed\tensorflow-lite-api-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\6726c0c92ea802d78e0ad2e921b021b9\transformed\tensorflow-lite-api-2.14.0\AndroidManifest.xml:6:5-7:38
 	android:targetSdkVersion
 		INJECTED from C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\src\main\AndroidManifest.xml
 	android:minSdkVersion

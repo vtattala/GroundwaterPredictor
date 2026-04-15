@@ -3256,6 +3256,11 @@ id customPanel
 id cut
 id dateInput
 id date_picker_actions
+id day1Input
+id day2Input
+id day3Input
+id day4Input
+id day5Input
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3267,6 +3272,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailText
 id dialog_button
 id dimensions
 id direct
@@ -3330,6 +3336,7 @@ id grouping
 id groups
 id header_title
 id heatmapGridView
+id heatmapImage
 id heatmapPlaceholderTextView
 id helperText
 id hide_ime_id
@@ -3495,6 +3502,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id regionDropdown
 id regionSpinner
 id report_drawn
 id resultCard
@@ -3507,6 +3515,7 @@ id right_side
 id riskText
 id rounded
 id row_index_key
+id runModelButton
 id runPredictionButton
 id save_non_transition_alpha
 id save_overlay_view
@@ -3545,6 +3554,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id soilTypeDropdown
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3565,6 +3575,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id statusText
 id statusTextView
 id stop
 id stretch
@@ -3587,6 +3598,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id temperatureInput
 id text
 id text2
 id textEnd
@@ -3782,6 +3794,7 @@ layout design_text_input_start_icon
 layout fragment_groundwater_prediction
 layout fragment_model_placeholder
 layout fragment_rainfall_prediction
+layout fragment_soil_moisture_prediction
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
