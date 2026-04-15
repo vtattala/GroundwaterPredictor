@@ -19,10 +19,7 @@ public class ModelPagerAdapter extends FragmentStateAdapter {
         }
 
         if (position == 1) {
-            return ModelPlaceholderFragment.newInstance(
-                    "Rainfall predictions are coming next.",
-                    "This tab already uses the same card-based prediction pattern, so a rainfall model can plug in without redesigning the app."
-            );
+            return new RainfallPredictionFragment();
         }
 
         return ModelPlaceholderFragment.newInstance(

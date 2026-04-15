@@ -26,10 +26,10 @@ com.waterproj.groundwaterpredictor.app-material-1.12.0-24 C:\Users\Owner\.gradle
 com.waterproj.groundwaterpredictor.app-activity-1.9.0-25 C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\eec5b95d98429a99f6e314421e8bdb13\transformed\activity-1.9.0\res
 com.waterproj.groundwaterpredictor.app-viewpager2-1.1.0-26 C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f962625e1ac977d029d75e465a96ef65\transformed\viewpager2-1.1.0\res
 com.waterproj.groundwaterpredictor.app-savedstate-1.2.1-27 C:\Users\Owner\.gradle\caches\9.0-milestone-1\transforms\f9c1b0d15e2e306c7984741feb49ecb8\transformed\savedstate-1.2.1\res
-com.waterproj.groundwaterpredictor.app-pngs-28 C:\Users\Owner\water_proj\GroundwaterPredictor\app\build\generated\res\pngs\debug
-com.waterproj.groundwaterpredictor.app-resValues-29 C:\Users\Owner\water_proj\GroundwaterPredictor\app\build\generated\res\resValues\debug
-com.waterproj.groundwaterpredictor.app-packageDebugResources-30 C:\Users\Owner\water_proj\GroundwaterPredictor\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.waterproj.groundwaterpredictor.app-packageDebugResources-31 C:\Users\Owner\water_proj\GroundwaterPredictor\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.waterproj.groundwaterpredictor.app-debug-32 C:\Users\Owner\water_proj\GroundwaterPredictor\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.waterproj.groundwaterpredictor.app-debug-33 C:\Users\Owner\water_proj\GroundwaterPredictor\app\src\debug\res
-com.waterproj.groundwaterpredictor.app-main-34 C:\Users\Owner\water_proj\GroundwaterPredictor\app\src\main\res
+com.waterproj.groundwaterpredictor.app-pngs-28 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\build\generated\res\pngs\debug
+com.waterproj.groundwaterpredictor.app-resValues-29 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\build\generated\res\resValues\debug
+com.waterproj.groundwaterpredictor.app-packageDebugResources-30 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.waterproj.groundwaterpredictor.app-packageDebugResources-31 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.waterproj.groundwaterpredictor.app-debug-32 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.waterproj.groundwaterpredictor.app-debug-33 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\src\debug\res
+com.waterproj.groundwaterpredictor.app-main-34 C:\Users\Owner\AndroidStudioProjects\GroundwaterPredictor\app\src\main\res

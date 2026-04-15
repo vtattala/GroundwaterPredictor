@@ -1369,10 +1369,13 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color button_bg
 color button_material_dark
 color button_material_light
+color button_text
 color call_notification_answer_color
 color call_notification_decline_color
+color card_bg
 color card_stroke
 color cardview_dark_background
 color cardview_light_background
@@ -1420,6 +1423,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color error
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -1427,6 +1431,8 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color input_bg_fill
+color input_stroke
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2081,6 +2087,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color muted_card_bg
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary
@@ -2095,6 +2102,7 @@ color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
+color screen_bg
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -2108,6 +2116,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color text_muted
 color text_primary
+color text_secondary
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -3182,6 +3191,7 @@ id aligned
 id all
 id allStates
 id always
+id amountText
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -3217,6 +3227,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chanceText
 id checkbox
 id checked
 id chronometer
@@ -3243,6 +3254,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dateInput
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3286,6 +3298,7 @@ id endDateInput
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id errorTextView
 id escape
 id exitUntilCollapsed
 id expand_activities_button
@@ -3317,11 +3330,14 @@ id grouping
 id groups
 id header_title
 id heatmapGridView
+id heatmapPlaceholderTextView
+id helperText
 id hide_ime_id
 id hideable
 id home
 id homeAsUp
 id honorRequest
+id horizonInput
 id horizontal_only
 id icon
 id icon_group
@@ -3341,6 +3357,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id latValue
 id layout
 id left
 id leftToRight
@@ -3350,6 +3367,10 @@ id line3
 id linear
 id listMode
 id list_item
+id loadingBar
+id loadingIndicator
+id locationDropdown
+id lonValue
 id m3_side_sheet
 id marquee
 id masked
@@ -3467,19 +3488,23 @@ id placeholderTitle
 id pooling_container_listener_holder_tag
 id position
 id postLayout
+id predictButton
 id pressed
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
-id regionDropdown
+id regionSpinner
 id report_drawn
+id resultCard
+id resultRegionTextView
 id reverseSawtooth
 id right
 id rightToLeft
 id right_icon
 id right_side
+id riskText
 id rounded
 id row_index_key
 id runPredictionButton
@@ -3545,6 +3570,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id summaryText
 id summaryTextView
 id supportScrollUp
 id tabMode
@@ -3578,7 +3604,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
-id timeRangeDropdown
+id timeRangeSpinner
 id title
 id titleDividerNoCustom
 id title_template
@@ -3603,6 +3629,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id versionText
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3754,6 +3781,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_groundwater_prediction
 layout fragment_model_placeholder
+layout fragment_rainfall_prediction
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3868,6 +3896,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string default_region_result
 string default_summary
 string default_trend
 string end_date_hint
@@ -3877,7 +3906,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string heatmap_title
+string heatmap_placeholder
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string input_card_subtitle
@@ -3988,7 +4017,6 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string region_hint
 string region_label
 string results_ready
 string results_title
@@ -4002,7 +4030,6 @@ string side_sheet_behavior
 string start_date_hint
 string start_date_label
 string status_bar_notification_info_overflow
-string time_range_hint
 string time_range_label
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
